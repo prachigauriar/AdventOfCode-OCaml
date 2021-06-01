@@ -1,0 +1,11 @@
+(executable
+  (name day1)
+  (modules day1)
+  (libraries core stdio)
+  )
+
+(executable
+  (name day2)
+  (modules day2)
+  (libraries core stdio)
+  )

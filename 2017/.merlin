@@ -1,0 +1,2 @@
+PKG core ppx_jane str batteries
+S src
