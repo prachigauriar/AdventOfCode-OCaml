@@ -9,3 +9,9 @@
   (modules day2)
   (libraries core stdio)
   )
+
+(executable
+  (name day3)
+  (modules day3)
+  (libraries core stdio)
+  )

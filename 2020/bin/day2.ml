@@ -27,6 +27,9 @@ let parse_line ~f line =
     f
 
 
+(** Parses lines into a list of (password_policy1, password) pairs and then 
+    validates each password using its corresponding policy.
+*)
 let part1 lines =
   let construct_policy min_count max_count character password = 
       ({ character; min_count; max_count }, password) in
@@ -41,6 +44,9 @@ let part1 lines =
   |> printf "Part 1: %d\n" 
     
 
+(** Parses lines into a list of (password_policy2, password) pairs and then 
+    validates each password using its corresponding policy.
+*)
 let part2 lines =
   let construct_policy index1 index2 character password = 
     ({ character; index1 = index1 - 1; index2 = index2 - 1 }, password) in
